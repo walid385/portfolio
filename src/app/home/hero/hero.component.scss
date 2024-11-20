@@ -1,0 +1,22 @@
+:host {
+    display: block;
+  }
+  
+  .hero-container {
+    .hero-left {
+      background-color: var(--hero-left-bg, #ffffff);
+      color: var(--hero-left-text, #000000);
+      padding: 2rem; /* Additional padding for better spacing */
+    }
+  
+    .hero-right {
+      background-color: var(--hero-right-bg, #f3f4f6);
+      color: var(--hero-right-text, #000000);
+      padding: 2rem; /* Same padding for symmetry */
+    }
+  
+    .text-container {
+      max-width: 600px; /* Restrict text width */
+    }
+  }
+  

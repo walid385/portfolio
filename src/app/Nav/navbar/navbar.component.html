@@ -1,29 +1,30 @@
-<div class="navbar bg-base-100">
-  <div class="flex-1">
-    <a class="btn btn-ghost text-xl">Walid Boulhazayez</a>
+<div class="navbar bg-base-100 px-4">
+  <!-- Logo Section -->
+  <div class="flex-1 flex items-center">
+    <a class="btn btn-ghost normal-case text-xl">Walid Boulhazayez</a>
   </div>
+
+  <!-- Icons Section -->
   <div class="flex-none flex items-center gap-4">
     <!-- GitHub Icon -->
     <a
       href="https://github.com/yourusername"
       target="_blank"
-      rel="noopener noreferrer"
-      class="btn btn-ghost btn-circle text-xl tooltip"
-      data-tip="GitHub">
-      <i class="fa-brands fa-github"></i>
+      rel="noopener noreferrer">
+      <fa-icon [icon]="faGithub" class="text-2xl"></fa-icon>
     </a>
 
     <!-- LinkedIn Icon -->
     <a
       href="https://linkedin.com/in/yourusername"
       target="_blank"
-      rel="noopener noreferrer"
-      class="btn btn-ghost btn-circle text-xl tooltip"
-      data-tip="LinkedIn">
-      <i class="fa-brands fa-github"></i>
+      rel="noopener noreferrer">
+      <fa-icon [icon]="faLinkedin" class="text-2xl"></fa-icon>
     </a>
 
-    <!-- Theme Switcher Component -->
-    <app-theme-switcher></app-theme-switcher>
+    <!-- Theme Switcher -->
+    <div class="flex items-center">
+      <app-theme-switcher></app-theme-switcher>
+    </div>
   </div>
 </div>

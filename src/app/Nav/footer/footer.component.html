@@ -1,1 +1,41 @@
-<p>footer works!</p>
+<footer class="footer footer-center bg-base-200 text-base-content rounded p-10">
+    <!-- Navigation Links -->
+    <nav class="grid grid-flow-col gap-4">
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover">Press kit</a>
+    </nav>
+  
+    <!-- Social Icons -->
+    <nav>
+      <div class="grid grid-flow-col gap-4">
+        <!-- GitHub Icon -->
+        <a
+          href="https://github.com/yourusername"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-ghost btn-circle">
+          <fa-icon [icon]="faGithub" class="text-3xl"></fa-icon>
+        </a>
+  
+        <!-- LinkedIn Icon -->
+        <a
+          href="https://linkedin.com/in/yourusername"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-ghost btn-circle">
+          <fa-icon [icon]="faLinkedin" class="text-3xl"></fa-icon>
+        </a>
+      </div>
+    </nav>
+  
+    <!-- Footer Text -->
+    <aside>
+      <p>
+        Copyright © {{ year }} - All rights reserved by ACME
+        Industries Ltd
+      </p>
+    </aside>
+  </footer>
+  

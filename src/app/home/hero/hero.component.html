@@ -1,31 +1,30 @@
-<div class="hero-container flex flex-col lg:flex-row w-full h-[100vh]  relative">
-    <!-- Left Section -->
-    <div class="hero-left flex flex-col items-center lg:items-start justify-center lg:basis-1/2 w-full px-6 lg:px-16">
-      <div class="text-container max-w-3xl container" >
-        <h1 class="text-4xl md:text-5xl font-bold">
-            Hi, I'm 
-            <span class="text-primary">Walid Boulhazayez</span>
-          </h1>
-          <p class="mt-4 text-xl">
-            Welcome to my personal website.
-          </p>
-        <div class="mt-8 flex justify-center lg:justify-start">
-          <a
-            routerLink="/"
-            class="bg-primary text-white py-3 px-6 rounded-full hover:bg-warning cursor-pointer">
-            Learn More
-          </a>
-        </div>
+<div class="hero-container flex flex-col lg:flex-row w-full h-screen relative">
+  <!-- Left Section -->
+  <div class="hero-left flex flex-col items-center lg:items-start justify-center h-1/2 lg:h-full lg:basis-1/2 w-full px-6 md:px-12 lg:px-16">
+    <div class="text-container container text-center lg:text-left">
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold">
+        Hi, I'm 
+        <span class="text-primary">Walid Boulhazayez</span>
+      </h1>
+      <p class="mt-4 text-lg md:text-xl text-gray-400 leading-relaxed">
+        Welcome to my personal website.
+      </p>
+      <div class="mt-6 flex justify-center lg:justify-start">
+        <a
+          routerLink="/"
+          class="bg-primary text-white py-3 px-6 rounded-full hover:bg-secondary transition-all cursor-pointer">
+          Learn More
+        </a>
       </div>
     </div>
-  
-    <!-- Right Section -->
-    <div class="hero-right flex items-center justify-center lg:basis-1/2 w-full px-6 lg:px-16">
-      <img
-        src="https://via.placeholder.com/400"
-        alt="Hero"
-        class="object-contain rounded-lg shadow-lg"
-      />
-    </div>
   </div>
-  
+
+  <!-- Right Section -->
+  <div class="hero-right flex items-center justify-center lg:basis-1/2 w-full px-6 md:px-12 lg:px-16">
+    <img
+      src="https://via.placeholder.com/400"
+      alt="Hero Image"
+      class="object-contain rounded-lg max-w-sm w-full"
+    />
+  </div>
+</div>

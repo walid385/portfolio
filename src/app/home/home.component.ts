@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HeroComponent } from './hero/hero.component';
 import { MainComponent } from './main/main.component';
 
+
 @Component({
   selector: 'app-home',
   standalone: true,

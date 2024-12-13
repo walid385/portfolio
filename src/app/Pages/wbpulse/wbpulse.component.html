@@ -3,7 +3,7 @@
     <div class="flex flex-col">
       <h2 class="text-2xl font-bold mt-3">Projects</h2>
       <p class="mb-4">Here are some of the projects I have worked on.</p>
-      <div class="flex gap-2">
+      <div class="flex gap-2 ">
         <!-- Project 1 -->
         <button 
         class="badge badge-lg text-white border-none transform transition-transform hover:scale-105 focus:outline-none" 
@@ -40,13 +40,27 @@
   </div>
 
   @if (activeProject === 'project1') {
-    <div class="mockup-browser bg-base-300 border max-w-5xl mt-4">
-      <div class="mockup-browser-toolbar">
-        <div class="input">https://webpulseui.web.app</div>
+    <div class="flex flex-col items-end relative">
+      <!-- Browser Mockup -->
+      <div class="mockup-browser bg-base-300 border 2xl:max-w-3xl xl:max-w-2xl mt-4 relative z-10">
+        <div class="mockup-browser-toolbar">
+          <div class="input">https://webpulseui.web.app</div>
+        </div>
+        <div class="bg-base-200 flex justify-center">
+          <img src="/image.png" alt="Project 1" class="w-full h-auto">
+        </div>
       </div>
-      <div class="bg-base-200 flex justify-center">
-        <img src="/image.png" alt="Project 1">
+    
+      <!-- Phone Mockup -->
+      <div class="mockup-phone absolute  xl:right-1/2 2xl:translate-x-28 xl:translate-x-24  sm:top-24 2xl:top-12 xl:top-6 scale-[0.7] 2xl:scale-[.7] xl:scale-[.6]  z-20">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-1 flex items-center justify-center text-center">
+            Hi.
+          </div>
+        </div>
       </div>
     </div>
+    
   }
 </div>

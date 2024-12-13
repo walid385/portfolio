@@ -1,1 +1,52 @@
-<p>wbpulse works!</p>
+<div class="container">
+  <div class="flex flex-col lg:flex-row relative">
+    <div class="flex flex-col">
+      <h2 class="text-2xl font-bold mt-3">Projects</h2>
+      <p class="mb-4">Here are some of the projects I have worked on.</p>
+      <div class="flex gap-2">
+        <!-- Project 1 -->
+        <button 
+        class="badge badge-lg text-white border-none transform transition-transform hover:scale-105 focus:outline-none" 
+        [ngClass]="{
+          'bg-[#16161a]': activeProject !== 'project1', 
+          'bg-[#353539] shadow-md shadow-black': activeProject === 'project1'
+        }" 
+        (click)="activeProject = 'project1'">
+        Project 1
+      </button>
+        <!-- Project 2 -->
+        <button 
+          class="badge badge-lg text-white border-none transform transition-transform hover:scale-105 focus:outline-none" 
+          [ngClass]="{
+            'bg-[#16161a]': activeProject !== 'project2', 
+            'bg-[#353539] shadow-md shadow-black': activeProject === 'project2'
+          }" 
+          (click)="activeProject = 'project2'">
+          Project 2
+        </button>
+
+        <!-- Project 3 -->
+        <button 
+          class="badge badge-lg text-white border-none transform transition-transform hover:scale-105 focus:outline-none" 
+          [ngClass]="{
+            'bg-[#16161a]': activeProject !== 'project3', 
+            'bg-[#353539] shadow-md shadow-black': activeProject === 'project3'
+          }" 
+          (click)="activeProject = 'project3'">
+          Project 3
+        </button>
+      </div>
+    </div>
+  </div>
+
+  @if (activeProject === 'project1') {
+    <div class="mockup-browser bg-base-300 border max-w-5xl mt-4">
+      <div class="mockup-browser-toolbar">
+        <div class="input">https://webpulseui.web.app</div>
+      </div>
+      <div class="bg-base-200 flex justify-center">
+        <img src="/image.png" alt="Project 1">
+      </div>
+    </div>
+  }
+</div>

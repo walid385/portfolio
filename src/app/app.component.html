@@ -1,11 +1,13 @@
-<div class="flex flex-col min-h-dvh">
+<div class="flex flex-col min-h-screen">
+  <!-- Navbar -->
   <div class="sticky top-0 z-50">
     <app-navbar/>
   </div>
 
-  <div class="">
+  <!-- Main Content -->
+  <div class="flex-1">
     @defer (prefetch on idle) {
-      <div class="">
+      <div>
         <router-outlet/>
       </div>
     }
@@ -16,5 +18,8 @@
     }
   </div>
 
-  <app-footer/>
+  <!-- Footer -->
+  <footer class="bg-base-300">
+    <app-footer/>
+  </footer>
 </div>

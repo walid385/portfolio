@@ -39,28 +39,59 @@
     </div>
   </div>
 
+
   @if (activeProject === 'project1') {
-    <div class="flex flex-col items-end relative">
-      <!-- Browser Mockup -->
-      <div class="mockup-browser bg-base-300 border 2xl:max-w-3xl xl:max-w-2xl mt-4 relative z-10">
-        <div class="mockup-browser-toolbar">
-          <div class="input">https://webpulseui.web.app</div>
-        </div>
-        <div class="bg-base-200 flex justify-center">
-          <img src="/image.png" alt="Project 1" class="w-full h-auto">
-        </div>
+    <div class="flex flex-col lg:flex-row items-start relative">
+      <!-- Left Text Section -->
+      <div class="flex flex-col lg:w-1/3 p-4">
+        <p class="mb-4 text-lg font-medium">
+          Welcome to 
+          <a 
+            href="https://webpulseui.web.app/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="bg-clip-text text-transparent relative "
+            style="
+              background: linear-gradient(to bottom right, #630101, #ac93ff);
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            ">
+            WebPulse
+          </a>
+        </p>
+        
+        
+        <ul class="list-disc pl-5">
+          <li>Highlight 1 about the project.</li>
+          <li>Highlight 2 about the project.</li>
+          <li>Highlight 3 about the project.</li>
+        </ul>
       </div>
-    
-      <!-- Phone Mockup -->
-      <div class="mockup-phone absolute  xl:right-1/2 2xl:translate-x-28 xl:translate-x-24  sm:top-24 2xl:top-12 xl:top-6 scale-[0.7] 2xl:scale-[.7] xl:scale-[.6]  z-20">
-        <div class="camera"></div>
-        <div class="display">
-          <div class="artboard artboard-demo phone-1 flex items-center justify-center text-center">
-            Hi.
+  
+      <!-- Right Mockups Section -->
+      <div class="flex flex-col lg:w-2/3 items-end relative">
+        <!-- Browser Mockup -->
+        <div class="mockup-browser bg-base-300 border 2xl:max-w-3xl xl:max-w-2xl lg:max-w-xl mt-4 relative z-10">
+          <div class="mockup-browser-toolbar">
+            <div class="input">https://webpulseui.web.app</div>
+          </div>
+          <div class="bg-base-200 flex justify-center">
+            <img src="/image.png" alt="Project 1" class="w-full h-auto">
+          </div>
+        </div>
+      
+        <!-- Phone Mockup -->
+        <div class="mockup-phone absolute lg:left-[-7rem] xl:left-[-3rem] 2xl:left-5 lg:top-[-2rem] xl:top-[1rem] 2xl:top-[3rem] scale-[0.7] 2xl:scale-[.7] xl:scale-[.6] lg:scale-[.5] z-20">
+          <div class="camera"></div>
+          <div class="display">
+            <div class="artboard artboard-demo phone-1 flex items-center justify-center text-center">
+              Hi.
+            </div>
           </div>
         </div>
       </div>
     </div>
-    
   }
+  
 </div>

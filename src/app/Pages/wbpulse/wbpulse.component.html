@@ -1,7 +1,7 @@
 <div class="container">
   <div class="flex flex-col lg:flex-row relative">
     <div class="flex flex-col">
-      <h2 class="text-2xl font-bold mt-3">Projects</h2>
+      <h1 class="text-2xl font-bold mt-3">Projects</h1>
       <p class="mb-4">Here are some of the projects I have worked on.</p>
       <div class="flex gap-2 ">
         <!-- Project 1 -->
@@ -44,29 +44,59 @@
     <div class="flex flex-col lg:flex-row items-start relative">
       <!-- Left Text Section -->
       <div class="flex flex-col lg:w-1/3 p-4">
-        <p class="mb-4 text-lg font-medium">
+        <p class="mb-4 text-2xl font-medium ">
           Welcome to 
           <a 
-            href="https://webpulseui.web.app/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            class="bg-clip-text text-transparent relative "
-            style="
-              background: linear-gradient(to bottom right, #630101, #ac93ff);
-              background-clip: text;
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-            ">
-            WebPulse
-          </a>
+          href="https://webpulseui.web.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group relative inline-block"
+          style="
+            background: linear-gradient(to bottom right, #630101, #ac93ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+        >
+          WebPulse
+          <span 
+            class="absolute left-0 bottom-0 h-[2px] w-full scale-x-0 bg-[#630101] transition-transform origin-left group-hover:scale-x-100"
+          ></span>
+        </a>
+        
         </p>
         
         
-        <ul class="list-disc pl-5">
-          <li>Highlight 1 about the project.</li>
-          <li>Highlight 2 about the project.</li>
-          <li>Highlight 3 about the project.</li>
-        </ul>
+        <div class="text-base leading-7 text-justify tracking-wide">
+          <p class="mb-4">
+            As a 
+            <span 
+              class="underline decoration-pink-500 dark:decoration-blue-400 underline-offset-4 hover:decoration-purple-500 dark:hover:decoration-teal-400 transition-colors duration-300">
+              self-taught developer
+            </span>
+            without formal work experience in the tech industry, I created a 
+            <span 
+              class="underline decoration-purple-500 dark:decoration-teal-400 underline-offset-4 hover:decoration-pink-500 dark:hover:decoration-yellow-400 transition-colors duration-300">
+              full-stack app
+            </span>
+            that serves as a central repository for development resources. This app enables users to register, log in, reset passwords, and manage, read, and publish blog posts.
+          </p>
+          <p class="">
+            It serves as a 
+            <span 
+              class="underline decoration-blue-500 dark:decoration-yellow-400 underline-offset-4 hover:decoration-teal-500 dark:hover:decoration-pink-500 transition-colors duration-300">
+              proof of my skills
+            </span>
+            in software development, including the planning, development, and deployment of complex web applications.
+          </p>
+        </div>
+        <div class="flex justify-center items-center h-16">
+          <svg class="animate-bounce w-6 h-6 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+        
+        
+        
       </div>
   
       <!-- Right Mockups Section -->
@@ -82,16 +112,74 @@
         </div>
       
         <!-- Phone Mockup -->
-        <div class="mockup-phone absolute lg:left-[-7rem] xl:left-[-3rem] 2xl:left-5 lg:top-[-2rem] xl:top-[1rem] 2xl:top-[3rem] scale-[0.7] 2xl:scale-[.7] xl:scale-[.6] lg:scale-[.5] z-20">
+        <div class="mockup-phone absolute lg:left-[-5rem] xl:left-[-3rem] 2xl:left-5 lg:top-[-2rem] xl:top-[1rem] 2xl:top-[3rem] scale-[0.7] 2xl:scale-[.7] xl:scale-[.6] lg:scale-[.5] z-20">
           <div class="camera"></div>
           <div class="display">
-            <div class="artboard artboard-demo phone-1 flex items-center justify-center text-center">
-              Hi.
+            <div class="artboard artboard-demo phone-1 flex items-center justify-center text-center bg-black">
+              <img src="/Bild1.png" alt="Project 1" class="w-full h-auto">
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="h-48"></div> <!-- Adds whitespace -->
+
+<!-- Container to center and limit width -->
+<div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+
+  <!-- Flex layout on large screens -->
+  <div class="flex flex-col lg:flex-row items-start ">
+    <!-- Left: Shape Section -->
+    <div class="relative lg:w-1/2 flex justify-center items-start">
+      <!-- Base shape -->
+      <div class="w-80 h-[31.25rem] bg-neutral-700 rounded-lg opacity-30 blur-sm"></div>
+      <!-- Slightly offset shape (less offset for cleaner look) -->
+      <div class="absolute top-32 left-4 w-80 h-[31.25rem] bg-neutral-600 rounded-lg opacity-50 "></div>
+    </div>
+
+    <!-- Right: Project Details (with margin to separate from shapes) -->
+    <div class="lg:w-1/2 lg:ml-12 mt-8 lg:mt-0 space-y-8">
+      <!-- Section Title -->
+      <h3 class="text-3xl font-bold">Project Details</h3>
+
+      <!-- Technologien und Tools -->
+      <div>
+        <h4 class="text-xl font-semibold  mb-2">Technologies &amp; Tools</h4>
+        <ul class="list-disc list-inside space-y-1   text-justify">
+          <li><strong>Frontend:</strong> Angular 16, Bootstrap, Angular CLI, Responsive CSS, JWT, RxJs</li>
+          <li><strong>Backend:</strong> ASP.NET Core 7, SQL Database, Azure, REST-APIs</li>
+          <li><strong>Deployment:</strong> Azure (Backend), Firebase (Frontend), GitHub Actions</li>
+          <li><strong>Version Control:</strong> Git, Visual Studio Code, Visual Studio</li>
+        </ul>
+      </div>
+
+      <!-- Hauptfunktionen -->
+      <div>
+        <h4 class="text-xl font-semibold   mb-2">Main Features</h4>
+        <ul class="list-disc list-inside space-y-1   text-justify">
+          <li>Role-based system with Watcher, Reader, and Writer access.</li>
+          <li>Content Management: Writers can manage and publish posts.</li>
+          <li>Security: Authentication and Authorization with JWT.</li>
+          <li>Responsive design optimized for multiple devices.</li>
+        </ul>
+      </div>
+
+      <!-- Herausforderungen und Lernergebnisse -->
+      <div>
+        <h4 class="text-xl font-semibold   mb-2">Challenges &amp; Learnings</h4>
+        <ul class="list-disc list-inside space-y-1   text-justify">
+          <li>Self-learning through tutorials, documentation, and practical application.</li>
+          <li>Adapting design for various device resolutions.</li>
+          <li>Implementing complex features like role-based access.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    <div class="h-48"></div> <!-- Adds whitespace -->
   }
   
 </div>

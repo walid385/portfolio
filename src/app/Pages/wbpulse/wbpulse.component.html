@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="flex flex-col lg:flex-row relative">
+  <div class="flex flex-col lg:flex-row relative container">
     <div class="flex flex-col">
       <h1 class="text-2xl font-bold mt-3">Projects</h1>
       <p class="mb-4">Here are some of the projects I have worked on.</p>
@@ -43,8 +43,8 @@
   @if (activeProject === 'project1') {
     <div class="flex flex-col lg:flex-row items-start relative">
       <!-- Left Text Section -->
-      <div class="flex flex-col lg:w-1/3 p-4">
-        <p class="mb-4 text-2xl font-medium ">
+      <div class="flex flex-col lg:w-1/3 p-4 text-center lg:text-start justify-center lg:justify-start">
+        <p class="my-4 text-3xl font-medium ">
           Welcome to 
           <a 
           href="https://webpulseui.web.app/"
@@ -66,7 +66,7 @@
         </p>
         
         
-        <div class="text-base leading-7 text-justify tracking-wide">
+        <div class="text-base/loose leading-7 text-justify xl:tracking-wide text-wrap ">
           <p class="mb-4">
             As a 
             <span 
@@ -89,7 +89,7 @@
             in software development, including the planning, development, and deployment of complex web applications.
           </p>
         </div>
-        <div class="flex justify-center items-center h-16">
+        <div class="md:flex justify-center items-center h-16 hidden ">
           <svg class="animate-bounce w-6 h-6 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
@@ -100,9 +100,9 @@
       </div>
   
       <!-- Right Mockups Section -->
-      <div class="flex flex-col lg:w-2/3 items-end relative">
+      <div class="flex flex-col lg:w-2/3 items-end relative w-full">
         <!-- Browser Mockup -->
-        <div class="mockup-browser bg-base-300 border 2xl:max-w-3xl xl:max-w-2xl lg:max-w-xl mt-4 relative z-10">
+        <div class="mockup-browser bg-base-300 border 2xl:max-w-3xl xl:max-w-2xl lg:max-w-xl hidden md:block mt-4 relative z-10">
           <div class="mockup-browser-toolbar">
             <div class="input">https://webpulseui.web.app</div>
           </div>
@@ -112,7 +112,7 @@
         </div>
       
         <!-- Phone Mockup -->
-        <div class="mockup-phone absolute lg:left-[-5rem] xl:left-[-3rem] 2xl:left-5 lg:top-[-2rem] xl:top-[1rem] 2xl:top-[3rem] scale-[0.7] 2xl:scale-[.7] xl:scale-[.6] lg:scale-[.5] z-20">
+        <div class="mockup-phone md:absolute left-1/2  lg:left-[-5rem] xl:left-[-3rem] 2xl:left-5 lg:top-[-2rem] xl:top-[1rem] 2xl:top-[3rem] scale-90 md:scale-[0.7] 2xl:scale-[.7] xl:scale-[.6] lg:scale-[.5] z-20">
           <div class="camera"></div>
           <div class="display">
             <div class="artboard artboard-demo phone-1 flex items-center justify-center text-center bg-black">
@@ -123,15 +123,15 @@
       </div>
     </div>
 
-    <div class="h-48"></div> <!-- Adds whitespace -->
+    <div class="h-0 md:h-48"></div> <!-- Adds whitespace -->
 
 <!-- Container to center and limit width -->
 <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
 
   <!-- Flex layout on large screens -->
-  <div class="flex flex-col lg:flex-row items-start ">
+  <div class="flex flex-col items-center justify-center lg:items-start lg:flex-row gap-12 ">
     <!-- Left: Shape Section -->
-    <div class="relative lg:w-1/2 flex justify-center items-start">
+    <div class="relative lg:w-1/2 lg:flex justify-center items-start hidden">
       <!-- Base shape -->
       <div class="w-80 h-[31.25rem] bg-neutral-700 rounded-lg opacity-30 blur-sm"></div>
       <!-- Slightly offset shape (less offset for cleaner look) -->
@@ -139,9 +139,9 @@
     </div>
 
     <!-- Right: Project Details (with margin to separate from shapes) -->
-    <div class="lg:w-1/2 lg:ml-12 mt-8 lg:mt-0 space-y-8">
+    <div class="lg:w-1/2 lg:ml-12 mt-4 lg:mt-0 space-y-8 text-wrap">
       <!-- Section Title -->
-      <h3 class="text-3xl font-bold">Project Details</h3>
+      <h3 class="text-3xl font-bold text-center lg:text-start">Project Details</h3>
 
       <!-- Technologien und Tools -->
       <div>
@@ -179,7 +179,7 @@
 </div>
 
     
-    <div class="h-48"></div> <!-- Adds whitespace -->
+    <div class="h-24 md:h-48"></div> <!-- Adds whitespace -->
   }
   
 </div>

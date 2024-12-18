@@ -44,7 +44,7 @@
     <div class="flex flex-col lg:flex-row items-start relative">
       <!-- Left Text Section -->
       <div class="flex flex-col lg:w-1/3 p-4 text-center lg:text-start justify-center lg:justify-start">
-        <p class="my-4 text-3xl font-medium ">
+        <p class="my-4 text-3xl lg:text-2xl xl:text-3xl font-medium ">
           Welcome to 
           <a 
           href="https://webpulseui.web.app/"
@@ -66,7 +66,7 @@
         </p>
         
         
-        <div class="text-base/loose leading-7 text-justify xl:tracking-wide text-wrap ">
+        <div class="leading-7 text-justify xl:tracking-wide text-wrap md:text-lg lg:text-base xl:text-lg">
           <p class="mb-4">
             As a 
             <span 
@@ -89,7 +89,7 @@
             in software development, including the planning, development, and deployment of complex web applications.
           </p>
         </div>
-        <div class="md:flex justify-center items-center h-16 hidden ">
+        <div class="lg:flex justify-center items-center h-16 hidden ">
           <svg class="animate-bounce w-6 h-6 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
           </svg>
@@ -112,7 +112,7 @@
         </div>
       
         <!-- Phone Mockup -->
-        <div class="mockup-phone md:absolute left-1/2  lg:left-[-5rem] xl:left-[-3rem] 2xl:left-5 lg:top-[-2rem] xl:top-[1rem] 2xl:top-[3rem] scale-90 md:scale-[0.7] 2xl:scale-[.7] xl:scale-[.6] lg:scale-[.5] z-20">
+        <div class="mockup-phone md:absolute left-1/2 md:left-[-3.5rem] md:top-64 lg:left-[-5rem] xl:left-[-3rem] 2xl:left-5 lg:top-[-2rem] xl:top-[1rem] 2xl:top-[3rem] scale-90 md:scale-[0.7] 2xl:scale-[.7] xl:scale-[.6] lg:scale-[.5] z-20">
           <div class="camera"></div>
           <div class="display">
             <div class="artboard artboard-demo phone-1 flex items-center justify-center text-center bg-black">
@@ -123,7 +123,7 @@
       </div>
     </div>
 
-    <div class="h-0 md:h-48"></div> <!-- Adds whitespace -->
+    <div class="h-0 md:h-48 lg:h-24 xl:h-48"></div> <!-- Adds whitespace -->
 
 <!-- Container to center and limit width -->
 <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
@@ -138,43 +138,53 @@
       <div class="absolute top-32 left-4 w-80 h-[31.25rem] bg-neutral-600 rounded-lg opacity-50 "></div>
     </div>
 
-    <!-- Right: Project Details (with margin to separate from shapes) -->
-    <div class="lg:w-1/2 lg:ml-12 mt-4 lg:mt-0 space-y-8 text-wrap">
-      <!-- Section Title -->
-      <h3 class="text-3xl font-bold text-center lg:text-start">Project Details</h3>
+<!-- Right: Project Details -->
+<div class="w-full lg:w-1/2 lg:ml-12 mt-4 lg:mt-0 space-y-10 px-4 sm:px-6 ">
+  <!-- Section Title -->
+  <h3 class="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-gray-100 text-center md:text-end lg:text-left">
+    Project Details
+  </h3>
 
-      <!-- Technologien und Tools -->
-      <div>
-        <h4 class="text-xl font-semibold  mb-2">Technologies &amp; Tools</h4>
-        <ul class="list-disc list-inside space-y-1   text-justify">
-          <li><strong>Frontend:</strong> Angular 16, Bootstrap, Angular CLI, Responsive CSS, JWT, RxJs</li>
-          <li><strong>Backend:</strong> ASP.NET Core 7, SQL Database, Azure, REST-APIs</li>
-          <li><strong>Deployment:</strong> Azure (Backend), Firebase (Frontend), GitHub Actions</li>
-          <li><strong>Version Control:</strong> Git, Visual Studio Code, Visual Studio</li>
-        </ul>
-      </div>
+  <!-- Technologies & Tools -->
+  <div>
+    <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2 text-wrap text-center md:text-end lg:text-left">
+      Technologies &amp; Tools
+    </h4>
+    <ul class="lg:list-disc list-outside space-y-2 text-gray-700 dark:text-gray-300 text-center md:text-end lg:text-left leading-7">
+      <li><strong>Frontend:</strong> Angular 16, Bootstrap, Angular CLI, Responsive CSS, JWT, RxJs</li>
+      <li><strong>Backend:</strong> ASP.NET Core 7, SQL Database, Azure, REST-APIs</li>
+      <li><strong>Deployment:</strong> Azure (Backend), Firebase (Frontend), GitHub Actions</li>
+      <li><strong>Version Control:</strong> Git, Visual Studio Code, Visual Studio</li>
+    </ul>
+  </div>
 
-      <!-- Hauptfunktionen -->
-      <div>
-        <h4 class="text-xl font-semibold   mb-2">Main Features</h4>
-        <ul class="list-disc list-inside space-y-1   text-justify">
-          <li>Role-based system with Watcher, Reader, and Writer access.</li>
-          <li>Content Management: Writers can manage and publish posts.</li>
-          <li>Security: Authentication and Authorization with JWT.</li>
-          <li>Responsive design optimized for multiple devices.</li>
-        </ul>
-      </div>
+  <!-- Main Features -->
+  <div>
+    <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2 text-wrap text-center md:text-end lg:text-left">
+      Main Features
+    </h4>
+    <ul class="lg:list-disc list-outside space-y-2 text-gray-700 dark:text-gray-300 text-center md:text-end lg:text-left leading-7">
+      <li>RBAC: Role-based system with Watcher, Reader, and Writer access.</li>
+      <li>Content Management: Writers can manage and publish posts.</li>
+      <li>Security: Authentication and Authorization with JWT.</li>
+      <li>Responsive design: optimized for multiple devices.</li>
+    </ul>
+  </div>
 
-      <!-- Herausforderungen und Lernergebnisse -->
-      <div>
-        <h4 class="text-xl font-semibold   mb-2">Challenges &amp; Learnings</h4>
-        <ul class="list-disc list-inside space-y-1   text-justify">
-          <li>Self-learning through tutorials, documentation, and practical application.</li>
-          <li>Adapting design for various device resolutions.</li>
-          <li>Implementing complex features like role-based access.</li>
-        </ul>
-      </div>
-    </div>
+  <!-- Challenges & Learnings -->
+  <div>
+    <h4 class="text-lg sm:text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2 text-wrap text-center md:text-end lg:text-left">
+      Challenges &amp; Learnings
+    </h4>
+    <ul class="lg:list-disc list-outside space-y-2 text-gray-700 dark:text-gray-300 text-center md:text-end lg:text-left leading-7">
+      <li>Self-learning through tutorials, documentation, and practical application.</li>
+      <li>Adapting design for various device resolutions.</li>
+      <li>Implementing complex features like role-based access.</li>
+    </ul>
+  </div>
+</div>
+
+
   </div>
 </div>
 

@@ -10,4 +10,11 @@ import { RouterLink } from '@angular/router';
 })
 export class MainComponent {
 
+  scrollToGetInTouch() {
+    const target = document.getElementById('get-in-touch');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
 }

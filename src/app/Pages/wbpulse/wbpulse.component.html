@@ -274,37 +274,31 @@
         <h2 class="text-3xl font-semibold mb-6 text-center lg:text-left">Database Decomposition</h2>
         <div class="text-justify">
             <p class="leading-relaxed mb-4">
-                The database architecture follows microservice principles, where each service manages its own dedicated database. This design ensures loose coupling between services, enhances scalability, and supports independent development and deployment. Below is a breakdown of the database schemas aligned with each service's core responsibilities:
+                The database architecture follows microservice principles, where each service manages its own dedicated database. This design ensures loose coupling between services, enhances scalability, and supports independent development and deployment. The key benefits of this architecture are outlined below:
             </p>
             <ul class="list-disc list-outside pl-4 lg:pl-0 space-y-2">
                 <li>
-                    <strong>Customer Service Database:</strong> Tables for managing customer profiles, shopping carts, rewards, and return records. This enables seamless customer interactions without dependency on other services.
+                    <strong>Loose Coupling:</strong> Each service manages its own data, ensuring that changes in one service do not ripple into others, reducing dependencies.
                 </li>
                 <li>
-                    <strong>Inventory Service Database:</strong> Includes tables for product inventory, stock levels, and low-stock alerts, facilitating precise inventory control and real-time stock monitoring.
+                    <strong>Scalability:</strong> Services can be scaled independently based on their specific workload, optimizing resource usage and costs.
                 </li>
                 <li>
-                    <strong>Sales Service Database:</strong> Manages sales transactions, ticket issuance, and updates to customer rewards, ensuring smooth checkout and loyalty program operations.
+                    <strong>Independent Development and Deployment:</strong> Teams can develop and deploy services autonomously without affecting the overall system, increasing productivity and reducing risks.
                 </li>
                 <li>
-                    <strong>Order Management Service Database:</strong> Tracks vendor orders, restocking workflows, and the complete order lifecycle, enabling efficient backend operations.
+                    <strong>Fault Isolation:</strong> Data-related issues or failures in one service remain contained, improving system reliability.
                 </li>
                 <li>
-                    <strong>Employee Service Database:</strong> Maintains records for employee profiles, roles, and store assignments, supporting role-based access and store-specific operations.
-                </li>
-                <li>
-                    <strong>Vendor Service Database:</strong> Contains vendor details and facilitates automated restocking notifications to ensure supply chain continuity.
-                </li>
-                <li>
-                    <strong>Tax Service Database:</strong> Stores tax rates and computes tax calculations based on customer locations and transaction types, ensuring compliance with regional tax regulations.
+                    <strong>Optimized Data Models:</strong> Each service can design its database schema tailored to its unique requirements, enhancing performance and reducing unnecessary complexity.
                 </li>
             </ul>
             <p class="leading-relaxed mt-4">
-                This decomposition enables the system to operate efficiently by isolating service-specific data. It supports scalability, simplifies maintenance, and ensures fault isolation, thereby aligning with modern software architecture principles.
+                By adhering to these principles, the system operates efficiently, supports scalability, simplifies maintenance, and ensures fault isolation. This approach aligns seamlessly with modern software architecture practices, creating a robust and maintainable ecosystem.
             </p>
         </div>
     </section>
-
+    
     <section class="mb-16">
       <h2 class="text-3xl font-semibold mb-6 text-center lg:text-left">Workflows</h2>
       <div class="flex flex-col lg:flex-row items-center lg:items-start gap-8">

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ContactMessage } from '../../models/models.contact';
 
+
 @Component({
   selector: 'app-contact',
   standalone: true,

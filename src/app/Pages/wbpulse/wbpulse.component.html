@@ -1,8 +1,8 @@
-<div class="container">
-  <div class="flex flex-col lg:flex-row relative container">
-    <div class="flex flex-col">
+<div class="container ">
+  <div class="flex flex-col lg:flex-row relative container mx-auto">
+    <div class="flex flex-col items-center justify-center md:items-start md:justify-start w-full lg:w-1/2 p-4">
       <h1 class="text-2xl font-bold mt-3">Projects</h1>
-      <p class="mb-4">Here are some of the projects I have worked on.</p>
+      <p class="mb-4 text-center md:text-start">Here are some of the projects I have worked on.</p>
       <div class="flex gap-2 ">
         <!-- Project 1 -->
         <button
@@ -45,18 +45,23 @@
         </a>
 
       </p>
+      
+     
+      
+      
+      
+      
 
-
-      <div class="leading-7 text-justify xl:tracking-wide text-wrap md:text-lg lg:text-base xl:text-lg">
+      <div class="text-justify text-wrap md:text-lg lg:text-base xl:text-lg">
         <p class="mb-4">
           As a
           <span
-            class="underline decoration-pink-500 dark:decoration-blue-400 underline-offset-4 hover:decoration-purple-500 dark:hover:decoration-teal-400 transition-colors duration-300">
+            class="text-primary">
             self-taught developer
           </span>
           without formal work experience in the tech industry, I created a
           <span
-            class="underline decoration-purple-500 dark:decoration-teal-400 underline-offset-4 hover:decoration-pink-500 dark:hover:decoration-yellow-400 transition-colors duration-300">
+            class="text-primary">
             full-stack app
           </span>
           that serves as a central repository for development resources. This app enables users to register, log in,
@@ -65,7 +70,7 @@
         <p class="">
           It serves as a
           <span
-            class="underline decoration-blue-500 dark:decoration-yellow-400 underline-offset-4 hover:decoration-teal-500 dark:hover:decoration-pink-500 transition-colors duration-300">
+            class="text-primary">
             proof of my skills
           </span>
           in software development, including the planning, development, and deployment of complex web applications.
@@ -77,6 +82,7 @@
           <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
       </div>
+ 
 
 
 
@@ -97,7 +103,7 @@
 
       <!-- Phone Mockup -->
       <div
-        class="mockup-phone md:absolute left-1/2 md:left-[-3.5rem] md:top-64 lg:left-[-5rem] xl:left-[-3rem] 2xl:left-5 lg:top-[-2rem] xl:top-[1rem] 2xl:top-[3rem] scale-90 md:scale-[0.7] 2xl:scale-[.7] xl:scale-[.6] lg:scale-[.5] z-20">
+        class="mockup-phone overflow-hidden md:absolute left-1/2 md:left-[-3.5rem] md:top-64 lg:left-[-5rem] xl:left-[-3rem] 2xl:left-5 lg:top-[-2rem] xl:top-[1rem] 2xl:top-[3rem] scale-90 md:scale-[0.7] 2xl:scale-[.7] xl:scale-[.6] lg:scale-[.5] z-20">
         <div class="camera"></div>
         <div class="display">
           <div class="artboard artboard-demo phone-1 flex items-center justify-center text-center bg-black">
@@ -428,7 +434,7 @@
         <p class="leading-relaxed ">
           If you're interested in the full implementation details or want to collaborate on similar projects, feel free
           to
-          <a href="mailto:your-email@example.com" class="text-blue-600 underline hover:text-blue-400 transition-colors">
+          <a  [routerLink]="['/']" fragment="get-in-touch" class= "text-primary hover:underline">
             get in touch!
           </a>
         </p>

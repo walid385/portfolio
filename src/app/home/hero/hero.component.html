@@ -1,4 +1,4 @@
-<div class="hero-container flex flex-col lg:flex-row w-full h-screen relative items-center justify-center shadow-md mb-48 md:mb-0">
+<div class="hero-container flex flex-col lg:flex-row w-full h-screen relative items-center justify-center shadow-md ">
   <!-- Left Section -->
   <div class="hero-left flex flex-col items-center lg:items-start justify-center h-full lg:h-full lg:basis-1/2 w-full px-6 md:px-12 lg:px-16">
     <div class="text-container container text-center lg:text-left">
@@ -11,9 +11,9 @@
       </p>
       <div class="mt-6 flex justify-center lg:justify-start">
         <a
-          routerLink="/"
+          [routerLink]="['/project-webpulse']"
           class="bg-primary text-white py-3 px-6 rounded-full hover:bg-secondary transition-all cursor-pointer">
-          Learn More
+          Projects
         </a>
       </div>
     </div>

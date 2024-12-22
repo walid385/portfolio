@@ -122,11 +122,16 @@
                                         class="bg-gray-600 text-white px-4 py-2 rounded-md hover:bg-gray-700 focus:outline-none">
                                         Cancel
                                     </button>
-                                    <button type="submit"
-                                        class="bg-primary text-white px-4 py-2 rounded-md hover:bg-secondary"
-                                        [disabled]="contactForm.invalid">
-                                        Send
-                                    </button>
+                                    <button
+                                    type="submit"
+                                    class="px-4 py-2 rounded-md text-white 
+                                      bg-primary hover:bg-secondary
+                                      disabled:bg-gray-500 disabled:cursor-not-allowed disabled:hover:bg-gray-500"
+                                    [disabled]="contactForm.invalid"
+                                  >
+                                    Send
+                                  </button>
+                                  
                                 </div>
 
                             </div>

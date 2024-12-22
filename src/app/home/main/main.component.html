@@ -1,4 +1,4 @@
-<div class="h-[80dvh] flex items-center justify-center relative">
+<div class="h-[80dvh] flex items-center justify-center relative mb-48 md:mb-0">
   <!-- Pseudo-element for transparent background -->
   <div class="absolute inset-0 bg-[url('/bg_boxes.svg')] bg-contain bg-left-top md:bg-[top_-20em_left] bg-no-repeat opacity-10 pointer-events-none"></div>
 
@@ -10,7 +10,7 @@
       <a [routerLink]="['/project-webpulse']" class="block w-full h-full">
         <div class="relative flex items-center justify-center h-full">
           <!-- Projects Title -->
-          <h2 class="text-2xl md:text-3xl font-bold text-white transition-transform duration-1000 group-hover:translate-y-[-1.2rem] md:group-hover:translate-y-[-0.8rem]">
+          <h2 class="text-xl md:text-2xl font-bold text-white transition-transform duration-1000 group-hover:translate-y-[-1.2rem] md:group-hover:translate-y-[-0.8rem]">
             Projects
           </h2>
           <!-- Hidden paragraph with smooth transition -->
@@ -37,13 +37,28 @@
           class="absolute truncate top-12 md:top-16 left-1/2 text-white transform -translate-x-1/2 opacity-0 transition-opacity duration-500 delay-300 group-hover:opacity-100 group-hover:translate-y-0 text-sm md:text-base">
           Click here to connect with me!
         </p>
-      </div>
-    </div>
+        </div>
+        </div>
+        
+        <!-- Gradient 3 -->
+        <div
+          class="col-span-1 glass bg-gradient-to-r from-[#493e2d] via-[#5a739d] to-[#7480FF] opacity-30 min-h-28 card cursor-pointer hover:opacity-100 group">
+          <a [routerLink]="['/about']" class="block w-full h-full">
+            <div class="relative flex items-center justify-center h-full">
+              <!-- Gradient 3 Title -->
+              <h2
+                class="text-xl md:text-2xl font-bold text-white transition-transform duration-1000 group-hover:translate-y-[-1.2rem] md:group-hover:translate-y-[-0.8rem]">
+                About Me
+              </h2>
+              <!-- Hidden paragraph with smooth transition -->
+              <p
+                class="absolute truncate top-12 md:top-16 left-1/2 text-white transform -translate-x-1/2 opacity-0 transition-opacity duration-500 delay-300 group-hover:opacity-100 group-hover:translate-y-0 text-sm md:text-base">
+                Wanna know more about me?
+              </p>
+            </div>
+          </a>
+        </div>
 
-    <!-- Gradient 3 -->
-    <div
-      class="col-span-1 glass bg-gradient-to-r from-[#493e2d] via-[#5a739d] to-[#7480FF] opacity-30 min-h-28 card cursor-pointer hover:opacity-100">
-    </div>
 
     <!-- Additional Gradients -->
     <div

@@ -19,10 +19,21 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        // Scroll to the top
-        window.scrollTo(0, 0);
+        // Check if there's a fragment in the URL
+        const tree = this.router.parseUrl(this.router.url);
+        if (tree.fragment) {
+          // Scroll to the fragment
+          const element = document.getElementById(tree.fragment);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        } else {
+          // No fragment; scroll to the top
+          window.scrollTo(0, 0);
+        }
       }
     });
   }
+  
 
 }

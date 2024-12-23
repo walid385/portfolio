@@ -1,4 +1,4 @@
 export const environment = {
     production: false,
-    apiBaseUrl: 'http://localhost:5270'
+    apiBaseUrl: 'https://portfolio-email-service.azurewebsites.net/'
 };

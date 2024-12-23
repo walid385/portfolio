@@ -13,4 +13,5 @@ export class WbpulseComponent {
   activeProject: string = 'project1';
 
   activeTab: string = 'overview';
+
 }

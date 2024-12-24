@@ -1,31 +1,49 @@
-<<<<<<< HEAD
-# portfolio
-=======
-# Portfolio
+# Walid Boulhazayez - Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+This project is my personal portfolio, showcasing my work and skills as a **Web Developer** and **Software Consultant**. It is built with **Angular** for the frontend and a **.NET Core API** for backend functionality, including **Gmail integration** for handling contact form submissions.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Live Portfolio**: Deployed and hosted on GitHub Pages.
+- **Dynamic Content**: Displays my projects, career journey, and contact details.
+- **Gmail Integration**: Contact form submissions are seamlessly sent to my Gmail account.
+- **Responsive Design**: Fully optimized for mobile and desktop devices.
+- **Modern UI**: Built with TailwindCSS for an elegant and consistent design.
 
-## Code scaffolding
+## Live Demo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+You can access the portfolio here:  
+[**Walid Boulhazayez - Portfolio**](https://walid385.github.io/portfolio/home)
 
-## Build
+## Technologies Used
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Frontend
+- **Angular**: A framework for building dynamic, single-page applications.
+- **TailwindCSS**: A utility-first CSS framework for creating responsive designs.
+- - **DaisyUI**: A TailwindCSS component library that simplifies UI development with pre-designed, customizable components.
+- **FontAwesome**: Icons for social links and interactive elements.
 
-## Running unit tests
+### Backend
+- **.NET Core API**: Manages backend functionality, including Gmail integration for contact form submissions.
+- **Gmail API**: Used to send emails from the contact form directly to my Gmail account.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Hosting
+- **GitHub Pages**: Used to host the frontend of the portfolio.
 
-## Running end-to-end tests
+## Contact Form
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+The contact form allows visitors to send messages, which are processed by the backend API and delivered to my Gmail account. 
 
-## Further help
+## Future Plans
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
->>>>>>> 4dc2ec4 (Init)
+- Add more projects and achievements to the portfolio.
+- Implement dark mode for better accessibility.
+- Introduce additional interactive elements to enhance user engagement.
+
+## Contact
+
+If you'd like to collaborate or have questions about my work, feel free to reach out:
+
+- [GitHub](https://github.com/walid385)
+- [LinkedIn](https://www.linkedin.com/in/walid-boulhazayez/)
+

@@ -20,15 +20,12 @@
 
         <!-- Icons Section (hidden on small screens) -->
         <div class="hidden lg:flex items-center gap-4">
-          <!-- GitHub Icon -->
           <a href="https://github.com/walid385" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-circle">
             <fa-icon [icon]="faGithub" class="text-2xl"></fa-icon>
           </a>
-          <!-- LinkedIn Icon -->
           <a href="https://www.linkedin.com/in/walid-boulhazayez/" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-circle">
             <fa-icon [icon]="faLinkedin" class="text-2xl"></fa-icon>
           </a>
-          <!-- Theme Switcher -->
           <div class="flex items-center">
             <app-theme-switcher></app-theme-switcher>
           </div>
@@ -50,6 +47,14 @@
   <div class="drawer-side">
     <label for="my-drawer-3" class="drawer-overlay"></label>
     <ul class="menu bg-base-200 w-80 min-h-screen p-4 space-y-4 flex flex-col items-center justify-center">
+            <!-- Close Button -->
+            <li class="mb-9">
+              <label for="my-drawer-3" class="btn btn-circle btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block h-8 w-8 stroke-current">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </label>
+            </li>
       <!-- Sidebar Nav Links -->
       <li><a [routerLink]="['/project-webpulse']">Projects</a></li>
       <li><a [routerLink]="['/about']">About</a></li>

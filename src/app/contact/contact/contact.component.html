@@ -128,7 +128,7 @@
                                       bg-primary hover:bg-secondary
                                       disabled:bg-gray-500 disabled:cursor-not-allowed disabled:hover:bg-gray-500"
                                     [disabled]="contactForm.invalid || isLoading">
-                                  >
+                                    <!-- Loading Spinner -->
                                   @if (isLoading) {
                                     <span class="loading loading-dots loading-lg mr-2"></span>
                                   } @else if (!isLoading) {

@@ -13,7 +13,7 @@ export class ThemeSwitcherComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    const savedTheme = localStorage.getItem('theme') ?? 'light';
+    const savedTheme = localStorage.getItem('theme') ?? 'dark';
     this.isDarkMode = savedTheme === 'dark'; // Set initial state
     document.documentElement.setAttribute('data-theme', savedTheme);
   }

@@ -187,8 +187,14 @@
 
   @if (activeProject === 'project2') {
 
-  <div class="absolute inset-0 bg-[url('/bg_boxes.svg')] bg-contain bg-left-top md:bg-[top_-20em_left] bg-no-repeat opacity-10 pointer-events-none"></div>
-  <div class="min-h-screen py-10">
+    <div
+    class="absolute inset-0 bg-contain bg-no-repeat opacity-10 pointer-events-none"
+    style="
+      background-image: url('bgboxes.svg');
+      background-position: left -20em;
+    "
+  ></div>
+    <div class="min-h-screen py-10">
     <!-- Container for Layout -->
     <div class="max-w-6xl mx-auto px-6">
       <!-- Section: Title -->
@@ -271,7 +277,7 @@
           </div>
           <!-- Architecture Diagram -->
           <div class="flex justify-center lg:justify-start w-full lg:w-1/2">
-            <img src="/Microservice_Archtecture.png" alt="Architecture Diagram" class="rounded-lg max-w-full h-auto shadow-md" />
+            <img src="Microservice_Archtecture.png" alt="Architecture Diagram" class="rounded-lg max-w-full h-auto shadow-md" />
           </div>
         </div>
       </section>
@@ -310,7 +316,7 @@
       <div class="flex flex-col lg:flex-row items-center lg:items-start gap-8">
         <!-- Image Section -->
         <div class="flex justify-center lg:justify-start w-full lg:w-1/2">
-          <img src="/Workflow.png" alt="Workflow Diagram" class="rounded-lg max-w-full h-auto shadow-lg">
+          <img src="Workflow.png" alt="Workflow Diagram" class="rounded-lg max-w-full h-auto shadow-lg">
         </div>
         <!-- Textual Content -->
         <div class="w-full lg:w-1/2 text-justify">

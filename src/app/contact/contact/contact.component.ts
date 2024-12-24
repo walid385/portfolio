@@ -1,3 +1,4 @@
+// contact.component.ts
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ContactUsService } from '../../services/contact.service';
@@ -8,13 +9,15 @@ import { ContactMessage } from '../../models/contact.model';
   standalone: true,
   imports: [FormsModule],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss',
+  styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent {
   model: ContactMessage;
 
   toastType: string | null = null; // null, 'success', or 'error'
   toastMessage: string = '';
+  
+  isLoading: boolean = false; // Loading state
 
   constructor(private contactUsService: ContactUsService) {
     this.model = {
@@ -33,15 +36,17 @@ export class ContactComponent {
       return;
     }
   
+    this.isLoading = true; // Start loading
     this.contactUsService.sendContactUsMessage(this.model).subscribe(
       (res: any) => {
+        this.isLoading = false; // Stop loading on success
         this.toastType = 'success';
         this.toastMessage = 'Message sent successfully.';
         this.resetForm();
         this.hideToastAfterDelay();
       },
       () => {
-        // Show a generic error message on failure
+        this.isLoading = false; // Stop loading on error
         this.toastType = 'error';
         this.toastMessage = 'An error occurred while sending the message. Please try again.';
         this.hideToastAfterDelay();
@@ -53,8 +58,6 @@ export class ContactComponent {
     this.resetForm();
   }
   
-  
-
   resetForm() {
     this.model = {
       name: '',
@@ -62,17 +65,17 @@ export class ContactComponent {
       message: '',
     };
   
-    // Reset the form state via Angular
     const formElement: any = document.querySelector('form');
     if (formElement) {
-      formElement.reset(); // Clear all inputs visually
+      formElement.reset();
     }
+
+    this.isLoading = false;
   }
-  
 
   hideToastAfterDelay() {
     setTimeout(() => {
-      this.toastType = null; // Hide the toast after 3 seconds
+      this.toastType = null;
     }, 3000);
   }
 }

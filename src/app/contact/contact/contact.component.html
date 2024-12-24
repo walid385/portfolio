@@ -129,7 +129,12 @@
                                       disabled:bg-gray-500 disabled:cursor-not-allowed disabled:hover:bg-gray-500"
                                     [disabled]="contactForm.invalid"
                                   >
-                                    Send
+                                  @if (isLoading) {
+                                    <span class="loading loading-dots loading-lg mr-2"></span>
+                                  } @else if (!isLoading) {
+                                    <span>Send</span>
+                                  }
+                                
                                   </button>
                                   
                                 </div>
